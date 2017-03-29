@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue实例2</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="demo">
+        <h3>v-once 指令（一次性操作）</h3>
+        <div id="example1">
+            <span v-once>This will never change: {{ msg }}</span>
+        </div>
+
+    </div>
+    <div class="demo">
+        <h3>v-html</h3>
+        <div id="example2">
+            <div v-html="rawHtml"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/vue.js"></script>
+
+</body>
+</html>

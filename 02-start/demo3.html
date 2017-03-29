@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件注册语法糖</title>
+</head>
+<body>
+<div id="app1">
+    <my-component1></my-component1>
+</div>
+---------------app1和ap2的分割线---------------
+<div id="app2">
+    <my-component1></my-component1>
+    <my-component2></my-component2>
+    <my-component3></my-component3>
+</div>
+
+<script src="js/vue.js"></script>
+<script>
+    Vue.component('my-component1',{
+        template:'<div>This is the first component!</div>'
+    })
+    var vm1 = new Vue({
+        el:'#app1'
+    })
+    var vm2 = new Vue({
+        el:'#app2',
+        components:{
+            'my-component2':{
+                template:'<div>This is the second component!</div>'
+            },
+            'my-component3':{
+                template:'<div>This is the third component!</div>'
+            }
+        }
+    })
+</script>
+</body>
+</html>

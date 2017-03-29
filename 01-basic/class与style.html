@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 与 Style 绑定</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+<div v-bind:class="classObject"></div>
+
+<script src="js/vue.js"></script>
+<script type="text/ecmascript-6">
+    data: {
+        isActive: true,
+            error: null
+    },
+    computed: {
+        classObject: function () {
+            return {
+                active: this.isActive && !this.error,
+                'text-danger': this.error && this.error.type === 'fatal',
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

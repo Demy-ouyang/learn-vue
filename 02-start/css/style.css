@@ -1,0 +1,13 @@
+*{padding:0;margin:0;box-sizing:border-box;}
+html{font:normal 12px 'Microsoft YaHei';font-weight: 400}
+body{}
+table,td,th{border-collapse:collapse;border-space:0;}
+table{width:100%;}
+td,th{border: 1px solid #bcbcbc;padding: 5px 10px}
+
+.wrap{margin:0 20px;}
+.demo{border-radius: 2px;font-size: 1.2em; margin-top: 1em;border: 1px solid #ddd; margin-bottom: 40px; line-height: 1.5em;}
+.demo h3{display: block;padding-bottom: 0.7em; font-weight:normal; background-color: #f8f8f8; padding: 15px 35px;}
+.demo h3+div{ padding: 25px 35px;}
+
+
